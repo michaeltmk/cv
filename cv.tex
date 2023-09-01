@@ -97,32 +97,6 @@
 %debug page outer frames
 %\usepackage{showframe}
 
-
-% job listing environments
-\newenvironment{jobshort}[2]
-    {
-    \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
-    \end{tabularx}
-    }
-    {
-    }
-
-\newenvironment{joblong}[2]
-    {
-    \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
-    \end{tabularx}
-    \begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
-    }
-    {
-    \end{itemize}
-    \end{minipage}    
-    }
-
-
-
 %----------------------------------------------------------------------------------------
 %	BEGIN DOCUMENT
 %----------------------------------------------------------------------------------------
@@ -142,12 +116,13 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+\Huge{Tse Man Kit Michael} \\[7.5pt]
+\href{https://github.com/michaeltmk}{\raisebox{-0.05\height}\faGithub\ michaeltmk} \ $|$ \ 
+\href{https://linkedin.com/in/man-kit-michael-tse-4013a5176}{\raisebox{-0.05\height}\faLinkedin\ man-kit-michael-tse} \ $|$ \ 
+% \href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
+\href{mailto:tse.man.kit.michael@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ tse.man.kit.michael@gmail.com} \ 
+% $|$ \ 
+% \href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -156,59 +131,256 @@
 
 %Interests/ Keywords/ Summary
 \section{Summary}
-This CV is automatically generated and deployed using the \href{https://github.com/jitinnair1/autoCV}{autoCV} template along with GitHub Actions such that a new version of the CV is compiled, published and ready for use when the cv.tex file is updated. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
+A quick learner, and explorer, with a Science and Engineering background, who has a great interest in new technology that may change the world. I am interested in working for a fast-growing and challenging company that will encourage my growth and development, so as to be the most efficient and effective employee I can possibly be.
 
 %Experience
 \section{Work Experience}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Cathay Pacific, Hong Kong} \\[3.75pt]
+\textbf{Solution Analyst} & \hfill Oct 2022 - Jan 2023 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Been responsible for integrating new data ingestion pipeline to the existing data lake platform, which include data explorations, resolving technical or data issues among different parties such as the data source team, data governors team, data scientist team and etc..
+        \item[--] Been responsible for deploying data scientists' new data model and AI model into aws cloud with the use of step function and EMR.
+        \item[--] Contributed to data ingestion workflow 
+        \item[--] Skills: Cloud Applications · Data Lakes · Data Streaming · Data Modeling · Amazon Web Services (AWS)
+    \end{itemize}
+\end{minipage}
+}  \\
+\end{tabularx}
 
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-\end{jobshort}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Varadise, Hong Kong} \\[3.75pt]
+\textbf{Assistance Manager, Scrum Master} & \hfill Oct 2022 - Jan 2023 \\[3.75pt]
+\textbf{Senior AI Robotic Engineer, Scrum Master} & \hfill Sep 2021 - Oct 2022 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Supervised a cross-functional team of 11, ranging from site-work technicians, and project managers to senior software engineers, and collaborated with business development, operations, and marketing.
+        \item[--] Scaled up the data pipeline from scratch to 9M messages per day, which had around 2000 data sources, written in python and go-lang.
+        \item[--] Led the team to continue developing different data source connectors such as HTTPS, MQTT, Kafka, FTP, ODBC, etc., and data sink connectors such as Grafana, Tableau, Webhook or WebSocket to 3rd parties.
+        \item[--] Applied Agile Methodologies and maintained scrum practice within the team.
+        \item[--] Coordinated with other stakeholders and standardized the time series data and geometric data input and output schema format.
+        \item[--] Conceptualized the needs of the construction industry such as safety, schedule management, and designed data analysis tools and insight for the clients.
+        \item[--] Translated business requests to technical requests between PM and software engineers.
+        \item[--] Supervised ML application projects for CV, such as wheel cleanliness and dump truck cover detection etc.
+        \item[--] Supervised development of MLops, Devops, robotic simulation, and chatbots.
+        \item[--] Skills: Scrum · Agile Methodologies · Continuous Improvement · Business Analysis · Process Improvement · Go (Programming Language) · MLOps · DevOps · Robot Operating System (ROS) · Cooperation · Apache Kafka · Machine Learning · Leadership · Problem Solving · Python (Programming Language)
+    \end{itemize}
+\end{minipage}
+}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{AI Robotic Engineer} & \hfill Mar 2021 - Sep 2021 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Planned IoT-Hub, a data pipeline for IoT devices on a cloud based container infrastructure, including a migration plan for existing devices, and a DB schema design from scratch.
+        \item[--] Developed IoT-Hub with multi-data source connectors such as Restful API, and MQTT, using python, kafka, AWS RDS postgres DB with timeseries data optimization, and tableau.
+        \item[--] Skills: SQL · Azure Databricks · Project Planning · Tableau · Amazon Relational Database Service (RDS) · Apache Kafka · Time Series Analysis · REST APIs · Mqtt · Data Pipelines · Machine Learning · Problem Solving · Python (Programming Language)
+    \end{itemize}
+\end{minipage}
+}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{DreamsAi, Hong Kong}  \\[3.75pt]
+\textbf{Data Engineer} & \hfill Jul 2020 - Mar 2021 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Developed a card detection CNN model using PyTorch, which has almost reached the human baseline.
+        \item[--] Developed an email classification LSTM model using PyTorch, with a semi-autoML cycle that has labeling and auto-retrain features.
+        \item[--] Been responsible for web scraping, data migration, server infrastructure, and networking setup.
+        \item[--] Managed the internal knowledge base including versioning, categorizing, and creating a welcome kit for newcomers.Developed a card detection CNN model using PyTorch, which has almost reached the human baseline. Developed an email classification LSTM model using PyTorch, with a semi-autoML cycle that has labeling and auto-retrain features. Been responsible for web scraping, data migration, server infrastructure, and networking setup. Managed the internal knowledge base including versioning, categorizing, and creating a welcome kit for newcomers.
+        \item[--] Skills: Knowledge Management · Data Migration · Data Pipelines · Networking · PyTorch · Machine Learning · Problem Solving · Python (Programming Language)
+    \end{itemize}
+\end{minipage}
+}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{PTC International Limited, Hong Kong}  \\[3.75pt]
+\textbf{Technical Support Engineer} & \hfill Apr 2017 - Jul 2020 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Provided technical support, demonstration, documentation, and troubleshooting.
+        \item[--] Customized data-loggers with alarm function or dashboard etc. written in Python (Raspberry Pi, Arduino, or any other programmable data-logger).Provided technical support, demonstration, documentation, and troubleshooting.
+        \item[--] Skills: Raspberry Pi · Arduino · Problem Solving · Python (Programming Language)
+    \end{itemize}
+\end{minipage}
+}
+\end{tabularx}
 
 
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
-\end{joblong}
-  
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Earth Products China Limited, Hong Kong}  \\[3.75pt]
+\textbf{Technical Engineer} & \hfill Sep 2015 - Apr 2017 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Provided technical support, demonstration, documentation, and troubleshooting.
+        \item[--] Responsible for developing new calibration methods for HOKLAS certification which involved experimental studies and data analysis.
+    \end{itemize}
+\end{minipage}
+}
+\end{tabularx}
+
+%Certifications
+\section{Certifications}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Solana Web3 Development Course - Xccelerate} & \hfill Aug 2023 - Present \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{A 10-week course about web3 application development on Solana chain which would also have a group project about developing a MVP of dApp.}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Goethe-Zertifikat B1 — Goethe-Institut e.V.} & \hfill Dec 2021 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{German language proficiency certificate.}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Machine Learning Engineering for Production Specialization — Deeplearning.ai} & \hfill Jun 2021 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Learnt how to deploy ML in production, such as data lifecycle, model pipeline as well as deployment pipeline.}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{IBM AI Engineering Specialization — IBM} & \hfill Jun 2020 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Learnt to use SciPy, ScikitLearn, apache spark, Keras, PyTorch.}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{IBM Data Science Specialization — IBM} & \hfill Mar 2020 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Understood the fundamental theories of data science. Learnt to use the IBM cloud, cloud programming, SQL, pandas library, geojson data and beautiful soup package. Link to the capstone project:  \href{https://www.linkedin.com/pulse/analysis-population-venue-distribution-hong-kong-man-kit-michael-tse}{Analysis of population and Venue distribution in Hong Kong}.}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Deep Learning Specialization — Deeplearning.ai} & \hfill Feb 2020 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Practiced on CV, NLP, and Sequence Prediction using TensorFlow.
+Learnt to the concepts of CNN, RNN/LSTM, dropout layer, batch normalization, learning rate adjustment etc.}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Introduction to TensorFlow for AI, ML, and DL Certificate — Deeplearning.ai} & \hfill Nov 2019 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Understood and Practiced object detection, face recognition, neural style transfer, language translation, speech-to-text translation, ResNet, Inception, R-CNN, YOLO, CTC, optimizing metrics, dataset distribution strategy, IoU, Bleu score.
+} \\
+
+\end{tabularx}
+
+
+
 %Projects
 \section{Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+\textbf{ChatGPT Teaching Assistant} & \hfill Jul 2023 - Present \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[] It is an AI chatbot using ChatGPT model to teach students physics based on the lecture notes. It will determine whether the question is within scope and only answer questions within the lecture notes and every answer will include referencing. It is deployed in Azure cloud. It is an AI chatbot using ChatGPT model to teach students physics based on the lecture notes. It will determine whether the question is within scope and only answer questions within the lecture notes and every answer will include referencing. It is deployed in Azure cloud.
+        \item[] Skills: Microsoft Azure · ChatGPT · langchain · Large Language Models (LLM) · Cloud Applications 
+    \end{itemize}
+\end{minipage}
+}
 \end{tabularx}
 
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Smart Office Bot} & \hfill Jan 2021 - Dec 2022 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[] Chatbot which can report weather by command and submit e-forms. Controlled devices and sent alerts of IoT projects.
+    \end{itemize}
+\end{minipage}
+}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{HA AI Challenge — Hospital Authority} & \hfill 2020 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[] A competition organized by HKSTP and HKHA.
+        \item[] Used effectiveness for classifying around 30 surgery tools. 
+        \item[] \url{https://github.com/michaeltmk/HA_AI}
+    \end{itemize}
+\end{minipage}
+}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Analysis of population and Venue distribution in Hong Kong - IBM} & \hfill 2020 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[] Used K-means clustering to analyze the relationship between population and venue distribution in HK. 
+        \item[] \url{https://github.com/michaeltmk/IBM-Data-Science-Capstone-Project}
+    \end{itemize}
+\end{minipage}
+}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{OCR (captchas breaking)} & \hfill 2019 - 2020 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[] Demonstrated on computer vision aim with CNN, data argumentation techniques, written in Tensorflow.
+        \item[] Trained on captchas collected in web and a captchas simulator.
+        \item[] \url{https://github.com/michaeltmk/Captcha_cracker}
+    \end{itemize}
+\end{minipage}
+}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Wireless Temperature and RH sensor} & \hfill 2019 - 2020 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[] Connected to a self-hosting server using a wifi single chip board.
+        \item[] \url{https://github.com/michaeltmk/StandAlone_T-H_sensor}
+    \end{itemize}
+\end{minipage}
+}
+\end{tabularx}
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
+Apr 2020 - Apr 2021 & MBA at  \textbf{Quantic School of Business and Technology} \\
 
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
+Sep 2016 - Jan 2019 & MSc(Mechanical Engineering) at \textbf{The Hong Kong Polytechnic University} \hfill (GPA: 3.0/4.3) \\ 
 
-2022 & Class 12th Some Board \hfill  (Grades) \\
+Sep 2012 - Jul 2015 & BSc(Maths. \& Phys.) at \textbf{The University of Hong Kong} \hfill  (GPA: 2.5/4.3) \\
 
-2021 & Class 10th Some Board \hfill  (Grades) \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
-\section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
+% \section{Publications}
+% \begin{refsection}[citations.bib]
+% \nocite{*}
+% \printbibliography[heading=none]
+% \end{refsection}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+Programming Languages & \normalsize{Python, GoLang, JavaScript, C++}\\
+Data \& software Technical Skills &  \normalsize{SciPy, Matlab, kafka, MQTT, spark, SQL, NoSQL, Elasticsearch, Tableau, Data Pipelines, Time Series Analysis, DevOps, databricks, NGINX}\\
+ML Technical Skills & \normalsize{ScikitLearn, TensorFlow, Keras, Pytorch, MLOps} \\
+Cloud Computing Technical Skills &  \normalsize{docker, k8s, AWS, Microsoft Azure, GCP} \\
+Hardware Technical Skills & \normalsize{Raspberry Pi, Arduino, LoRa, sigfox, ROS, Gazebo}\\
+Soft Skills  &  \normalsize{Scrum · Agile Methodologies · Continuous Improvement · Business Analysis · Process Improvement · Cooperation · Leadership · Problem Solving · Project Planning · Problem Solving · Knowledge Management}\\  
+Languages & \normalsize{Cantonese(native), English(fluent), Mandarin(fluent), German(intermediate)}
 \end{tabularx}
 
 \vfill
