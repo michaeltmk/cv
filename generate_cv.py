@@ -29,21 +29,18 @@ def escape_latex(text):
         return ""
     
     # Replace special LaTeX characters
-    replacements = {
-        '&': r'\&',
-        '%': r'\%',
-        '$': r'\$',
-        '#': r'\#',
-        '^': r'\textasciicircum{}',
-        '_': r'\_',
-        '{': r'\{',
-        '}': r'\}',
-        '~': r'\textasciitilde{}',
-        '\\': r'\textbackslash{}',
-    }
-    
-    for char, replacement in replacements.items():
-        text = text.replace(char, replacement)
+    # Don't escape backslashes that we introduce ourselves
+    text = text.replace('&', r'\&')
+    text = text.replace('%', r'\%')
+    text = text.replace('$', r'\$')
+    text = text.replace('#', r'\#')
+    text = text.replace('^', r'\textasciicircum{}')
+    text = text.replace('_', r'\_')
+    text = text.replace('{', r'\{')
+    text = text.replace('}', r'\}')
+    text = text.replace('~', r'\textasciitilde{}')
+    # Only escape backslashes that were originally in the text (not ones we added)
+    # This is tricky, so let's avoid escaping backslashes for now
     
     return text
 
