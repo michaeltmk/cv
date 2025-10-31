@@ -527,7 +527,7 @@ def main():
     # Define paths
     script_dir = Path(__file__).parent
     yaml_path = script_dir / "portfolio.yaml"
-    output_path = script_dir / "cv_generated.tex"
+    output_path = script_dir / "cv.tex"
     
     # Load portfolio data
     print(f"Loading portfolio data from {yaml_path}")
