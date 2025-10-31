@@ -1,7 +1,7 @@
 NAME=cv
 GENERATED_NAME=cv_generated
 
-all:
+all: generated
 	latexmk -pdf ${NAME}.tex
 
 generate:
