@@ -309,6 +309,8 @@ skills:
 # Projects
 projects:
   - title: ASD Detection App
+    start_date: ""  # Update with actual start date
+    end_date: ""    # Update with actual end date
     description:
       - An application that detect signs of autism spectrum disorder (ASD) in children based on their interactions with their parents and caregivers at home or in clinical settings.
       - Through AI glass, the app uses computer vision and natural language processing to analyze the child's behavior and provide feedback to parents and caregivers.
@@ -324,6 +326,8 @@ projects:
       - src: /projects/asd-detection-home.png
         alt: ASD Detection homepage
   - title: ChatGPT Teaching Assistant
+    start_date: ""  # Update with actual start date
+    end_date: ""    # Update with actual end date
     description: A cloud based RAG LLM chatbot using ChatGPT model to teach students physics based on the lecture notes, videos, and pastpapers. It will only answer questions within the knowledge base and every answer will include referencing.
     tech_stack:
       - Microsoft Azure
@@ -338,6 +342,8 @@ projects:
       - src: /projects/chatgpt-teach-ass.jpeg
         alt: ChatGPT Teaching Assistant chat
   - title: Tx
+    start_date: ""  # Update with actual start date
+    end_date: ""    # Update with actual end date
     description:
       - A Web3 project which provide a trustworthy, transparent and sustainable resale ticketing system with the use of NFT and encrypted on chain data.
     tech_stack:
@@ -352,6 +358,8 @@ projects:
       - src: /projects/tx-home.png
         alt: Tx Ticketing homepage
   - title: Analysis of population and Venue distribution in Hong Kong
+    start_date: ""  # Update with actual start date
+    end_date: ""    # Update with actual end date
     description:
       - Used K-means clustering to analyze the relationship between population and venue distribution in HK.
     tech_stack:
@@ -362,6 +370,8 @@ projects:
     demo_url: https://www.linkedin.com/pulse/analysis-population-venue-distribution-hong-kong-man-kit-michael-tse/
     images: []
   - title: OCR (captchas breaking)
+    start_date: ""  # Update with actual start date
+    end_date: ""    # Update with actual end date
     description:
       - Demonstrated on computer vision aim with CNN, data argumentation techniques, written in Tensorflow.
       - Trained on captchas collected in web and a captchas simulator.

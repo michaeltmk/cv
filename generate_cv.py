@@ -202,19 +202,31 @@ def generate_projects_section(projects):
         tech_stack = project.get('tech_stack', [])
         repo_url = project.get('repo_url', '')
         demo_url = project.get('demo_url', '')
+        start_date = project.get('start_date', '')
+        end_date = project.get('end_date', '')
+        
+        # Format the period
+        if start_date and end_date:
+            period = f"{start_date} - {end_date}"
+        elif start_date:
+            period = f"{start_date} - Present"
+        elif end_date:
+            period = end_date
+        else:
+            period = "Present"  # Default fallback
         
         # Format tech stack
         tech_str = ' · '.join(tech_stack) if tech_stack else ''
         
         # Format URLs
-        url_section = ""
+        url_sections = []
         if repo_url:
-            url_section = f"\\url{{{repo_url}}}"
-        elif demo_url:
-            url_section = f"\\url{{{demo_url}}}"
+            url_sections.append(f"Repository: \\url{{{repo_url}}}")
+        if demo_url:
+            url_sections.append(f"Demo: \\url{{{demo_url}}}")
         
         project_content = f"""\\begin{{tabularx}}{{\\linewidth}}{{ @{{}}l r@{{}} }}
-\\textbf{{{escape_latex(title)}}} & \\hfill Present \\\\[3.75pt]
+\\textbf{{{escape_latex(title)}}} & \\hfill {escape_latex(period)} \\\\[3.75pt]
 \\multicolumn{{2}}{{@{{}}X@{{}}}}{{
 \\begin{{minipage}}[t]{{\\linewidth}}
     \\begin{{itemize}}[nosep,after=\\strut, leftmargin=1em, itemsep=3pt]"""
@@ -229,7 +241,8 @@ def generate_projects_section(projects):
         if tech_str:
             project_content += f"\n        \\item[] Skills: {escape_latex(tech_str)}"
         
-        if url_section:
+        # Add URLs
+        for url_section in url_sections:
             project_content += f"\n        \\item[] {url_section}"
         
         project_content += """
