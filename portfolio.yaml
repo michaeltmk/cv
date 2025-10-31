@@ -211,7 +211,10 @@ professional:
     - institution: IBM
       degree: IBM Data Science Specialization
       year: Mar 2020
-      description: "Understood the fundamental theories of data science. Learnt to use the IBM cloud, cloud programming, SQL, pandas library, geojson data and beautiful soup package. Link to the capstone project: Analysis of population and Venue distribution in Hong Kong."
+      description: "Understood the fundamental theories of data science. Learnt to use the IBM cloud, cloud programming, SQL, pandas library, geojson data and beautiful soup package."
+      link:
+        url: "https://www.linkedin.com/pulse/analysis-population-venue-distribution-hong-kong-man-kit-michael-tse/"
+        text: "Analysis of population and Venue distribution in Hong Kong"
     - institution: Deeplearning.ai
       degree: Deep Learning Specialization
       year: Feb 2020

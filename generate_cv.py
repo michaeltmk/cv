@@ -168,7 +168,22 @@ def generate_certifications_section(certifications):
                 description_text = '. '.join(description)
             else:
                 description_text = description
-            sections[-1] = sections[-1].replace('DESCRIPTION_PLACEHOLDER', escape_latex(description_text))
+            
+            # Escape the description text first
+            escaped_description = escape_latex(description_text)
+            
+            # Check if there's a link to add
+            link = cert.get('link', {})
+            if link and 'url' in link and 'text' in link:
+                # Add hyperlink after the description
+                link_url = link['url']
+                link_text = escape_latex(link['text'])
+                # Build the final text with properly formed LaTeX href command
+                final_text = f"{escaped_description} Link: \\href{{{link_url}}}{{{link_text}}}"
+            else:
+                final_text = escaped_description
+            
+            sections[-1] = sections[-1].replace('DESCRIPTION_PLACEHOLDER', final_text)
         else:
             sections[-1] = sections[-1].replace('DESCRIPTION_PLACEHOLDER', '')
     
