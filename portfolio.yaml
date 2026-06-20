@@ -7,7 +7,7 @@ personal:
   nickname: Mike
   # age: 25 years old
   location: Hong Kong
-  title: Full Stack Developer
+  title: Full-Stack Solutions Architect
   description: A quick learner, and explorer, with a Science and Engineering background, who has a great interest in new technology that may change the world. I am interested in working for a fast-growing and challenging company that will encourage my growth and development, so as to be the most efficient and effective employee I can possibly be.
 
 # Contact Information
@@ -17,8 +17,8 @@ contact:
   location: Hong Kong
   social:
     linkedin:
-      username: man-kit-michael-tse-4013a5176
-      url: https://www.linkedin.com/in/man-kit-michael-tse-4013a5176
+      username: man-kit-michael-tse
+      url: https://www.linkedin.com/in/man-kit-michael-tse
     github:
       username: michaeltmk
       url: https://github.com/michaeltmk
@@ -44,23 +44,23 @@ professional:
       position: Solution Lead
       period: Dec 2024 - Present
       description:
-        - Managed data or ML projects or applications which involved data ingestions, mlOps towards different engineering teams or customers. Collaborated with data scientists to ensure the data and AI models are scalable, maintainable, and secure.
-        - Leaded the Data Lake House (DLH) product development, a data platform that provides a unified data storage and processing solution for structured, semi-structured, and unstructured data, enabling efficient data management and analytics. It is used by various teams including data scientists, data engineers, and business analysts.
-        - Designed and implemented data governance policies and best practices, ensuring data security, compliance with industry standards, and alignment with business objectives.
-        - Collaborated with cross-functional teams to define and implement data governance policies and best practices, ensuring data security and compliance with industry standards.
-        - Lead on the feature store development to provide a centralized dataset for data scientists for training and inference of machine learning models. It is also integrated to vector database for vector search.
-        - Leaded on the team enhancement, including organized team training, knowledge sharing sessions.
-        - Leaded on the poc projects for streaming analysis, vector database and team infrastructure revamping.
-        - Acted as a bridge between business and technical teams, translating requirements between project managers and software engineers.
+        - Spearheaded the enterprise-wide adoption of Generative AI tools, including driving developer productivity via AI-assisted coding and leading the development of autonomous monitoring agents for production oversight.
+        - Acted as Technical Lead for the design and deployment of an enterprise-grade Semantic Search platform; utilized ELK (Elasticsearch/Logstash/Kibana) and Vector Search to enable advanced natural language discovery across unstructured datasets.
+        - Orchestrated the full lifecycle of multiple data product engines and internal initiatives, managing everything from initial stakeholder requirement gathering to final production integration with scalable cloud inference endpoints.
+        - Directed the evolution of the Data Lake House (DLH) and Feature Store architectures, providing a unified and secure data layer that supports both real-time analytics and machine learning model training.
+        - Enhanced team efficiency and ownership by delegating high-impact workstreams to Solution Analysts and provided active coaching on people management and advanced AI engineering practices.
+        - Drove department-wide productivity and quality gains by standardizing Agile/Scrum workflows and Jira practices, ensuring all deliverables met enterprise security, compliance, and architectural standards.
+        - Evaluated emerging cloud and analytics technologies to identify business improvement opportunities, successfully translating complex technical capabilities into actionable roadmaps for executive stakeholders.
       Skills: 
-        - Data Lake House (DLH) strategy
-        - Feature Store architecture
-        - Vector database / semantic search enablement
-        - Enterprise data governance & compliance
-        - Product roadmap & prioritization
-        - Platform & MLOps enablement
-        - Cross-functional stakeholder alignment
-        - Change & risk management
+        - Generative AI Strategy
+        - Product Ownership
+        - Team Leadership & Mentorship
+        - SageMaker MLOps
+        - Data Lake House
+        - Enterprise Governance
+        - Scrum/Jira Governance
+        - Stakeholder Alignment
+        - Semantic/Vector Search (ELK)
 
     - company: Cathay Pacific
       position: Solution Analyst
@@ -256,10 +256,10 @@ skills:
     - Python
     - GoLang
   data_software_technical_skills:
-    - SciPy
-    - Matlab
+    - Generative AI (LLMs)
+    - Semantic/Vector Search
+    - ELK Stack
     - kafka
-    - MQTT
     - spark
     - SQL
     - NoSQL
@@ -271,17 +271,18 @@ skills:
     - databricks
     - NGINX
   ml_technical_skills:
+    - MLOps
     - ScikitLearn
     - TensorFlow
     - Keras
     - Pytorch
-    - MLOps
   cloud_computing_technical_skills:
     - docker
     - k8s
     - AWS
     - Microsoft Azure
     - GCP
+    - GitHub Actions Automation
   hardware_technical_skills:
     - Raspberry Pi
     - Arduino
@@ -290,6 +291,8 @@ skills:
     - ROS
     - Gazebo
   soft_skills:
+    - Team Leadership & Mentorship
+    - Effective Delegation
     - Scrum
     - Agile Methodologies
     - Continuous Improvement
@@ -300,6 +303,7 @@ skills:
     - Project Planning
     - Problem Solving
     - Knowledge Management
+    - Stakeholder Management
   languages:
     - Cantonese(native)
     - English(fluent)
@@ -327,7 +331,7 @@ projects:
         alt: ASD Detection homepage
   - title: ChatGPT Teaching Assistant
     start_date: Jul 2023
-    end_date:
+    end_date: Sep 2025
     description: A cloud based RAG LLM chatbot using ChatGPT model to teach students physics based on the lecture notes, videos, and pastpapers. It will only answer questions within the knowledge base and every answer will include referencing.
     tech_stack:
       - Microsoft Azure
@@ -386,9 +390,9 @@ projects:
 # Resume
 resume:
   title: Michael's Resume
-  description: Full Stack Developer
+  description: Full-Stack Solutions Architect
   file_type: PDF
-  last_updated: October 2025
+  last_updated: June 2026
   file_size: 0.2 MB
   preview_image: /resume-preview.png
   download_url: https://michaeltmk.github.io/cv/cv.pdf
@@ -436,7 +440,7 @@ assets:
 # Site Configuration
 site:
   name: Michael Tse - Portfolio
-  title: Full Stack Developer Portfolio
+  title: Full-Stack Solutions Architect Portfolio
   description: Modern portfolio showcasing full-stack development projects and AI integrations
   url: https://your-portfolio.com
   author: Michael Tse
